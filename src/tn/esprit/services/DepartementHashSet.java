@@ -66,7 +66,7 @@ public class DepartementHashSet implements IDepartement <Departement> {
             }
         };
 
-        Set sortedDepartements = new TreeSet<>(nomComparator.thenComparing(nbEmployesComparator));
+        Set <Departement> sortedDepartements = new TreeSet<>(nomComparator.thenComparing(nbEmployesComparator));
         sortedDepartements.addAll(departements);
 
         System.out.println(sortedDepartements);
